@@ -1,0 +1,235 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+:root {
+    --bgcol: linear-gradient(to top, rgba(2, 3, 13, 0.9), rgba(43, 63, 117, 0.7)), url(../Assets/images/suppose-bg.webp);
+    --textcol: rgb(122, 178, 226);
+}
+
+body {
+    padding: 50px 100px;
+    background: var(--bgcol);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo,
+.nav-enquiry,
+.people-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo h1 {
+    color: aliceblue;
+    font-size: 30px;
+}
+
+.nav-enquiry p {
+    color: aliceblue;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav-enquiry p:hover {
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    transition: all .1s ease-in-out;
+}
+
+.people-info p {
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.people-info button {
+    padding: 15px 30px;
+    border-radius: 8px;
+}
+
+.people-info .login button {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 19px;
+    cursor: pointer;
+
+}
+
+.people-info .sign-up button {
+    border: none;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.people-info .sign-up button a {
+    text-decoration: none;
+    color: rgb(59, 87, 165);
+}
+
+.people-info .login button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    padding: 100px 100px 40px 0;
+}
+
+.home-text h1 {
+    font-size: 70px;
+    width: 600px;
+    color: var(--textcol);
+}
+
+.home-text p {
+    width: 440px;
+    color: rgb(181, 210, 236);
+    font-size: 19px;
+
+}
+
+.account,
+.yields {
+    padding: 20px;
+    font-size: 17px;
+    background: #354970;
+    color: rgb(212, 224, 235);
+    border-radius: 12px;
+    border: none;
+    border: 2px solid #7a90bd;
+    margin: 4px;
+}
+
+.account:hover,
+.yields:hover {
+    background-color: #475f8d;
+    border: 1px solid #cacfd8;
+    cursor: pointer;
+}
+
+.account a {
+    text-decoration: none;
+    color: rgb(212, 224, 235);
+}
+
+.home-container {
+    display: flex;
+    gap: 100px;
+
+}
+
+.home-end-text {
+    display: flex;
+    text-align: center;
+    gap: 20px;
+    margin: 30px 0;
+
+}
+
+.home-end-text h1 {
+    font-size: 50px;
+}
+
+.home-end-text p {
+    font-size: 15px;
+}
+
+.first-end-text h1,
+.second-end-text h1,
+.third-end-text h1 {
+    color: #7a90bd;
+}
+
+.first-end-text p,
+.second-end-text p,
+.third-end-text p {
+    color: rgb(181, 210, 236);
+}
+
+.second-end-text {
+    border-left: 1px solid rgb(137, 118, 190);
+    padding: 0 10px;
+    border-right: 1px solid rgb(137, 118, 190);
+}
+
+.phone-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    animation: bounce 1s infinite alternate;
+}
+
+.phone-image img {
+    width: 450px;
+    height: 75vh;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-30px);
+    }
+}
+
+
+
+@media(max-width:700px) {
+    body{
+        padding: 0;
+    }
+    nav{
+        display: none !important}
+    .home-container {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .home-content .home .home-text h1{
+        font-size: 40px;
+        width: 350px;
+    }
+    .home-content .home .home-text p{
+        font-size: 15.5px;
+        width: 300px;
+    }
+    .action-btn button{
+        font-size: 15px;
+        justify-content: center;
+    }
+    .home-end-text .first-end-text h1,
+    .second-end-text h1,
+    .third-end-text h1{
+        font-size: 20px;
+    }
+    .home-end-text .first-end-text p,
+    .second-end-text p,
+    .third-end-text p{
+        font-size: 13px;
+    }
+    .phone-image{
+        display: none !important;
+    }
+}

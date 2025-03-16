@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "roboto", sans-serif;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid rgb(173, 140, 140);
+    box-shadow: 2px 5px 10px rgb(105, 119, 105);
+    padding: 0px 30px 100px 30px;
+
+}
+
+.form-content .sign-up h1 {
+    font-size: 50px;
+    padding: 30px 0;
+}
+
+.form-content input {
+    width: 400px;
+    height: 50px;
+    margin: 5px;
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 12px;
+    padding: 0 15px;
+    margin: 12px 0;
+}
+
+.form-content input:focus-within {
+    border-radius: 0;
+    outline: none;
+    /* box-shadow: 2px 5px 10px rgb(18, 18, 150), -2px -5px -10px rgb(95, 95, 180); */
+}
+
+.form-content .sign-btn {
+    padding: 15px 165px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 12px;
+    color: aliceblue;
+
+}
+
+.form-content p {
+    font-size: 20px;
+    padding-bottom: 60px;
+}
+
+.form-content p a {
+    text-decoration: none;
+
+}
+
+.form-content button {
+    padding: 15px 95px;
+    font-size: 20px;
+    border-radius: 12px;
+    background-color: #1C2B54;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.form-content button i {
+    font-size: 30px;
+    align-items: center;
+}
+
+
+@media(max-width:900px) {
+    
+}
+@media(max-width:700px) {
+    .form-content .sign-up h1{
+        font-size: 30px;
+    }
+    .form-content{
+        width: 320px;
+        border: none;
+    }
+    .form-content input{
+        width: 300px;
+        padding: 15px;
+        border: 1px solid ;
+    }
+    .form-content .sign-btn{
+        font-size: 18px;
+        width: 300px;
+        padding: 0;
+
+    }
+    .form-content button{
+        font-size: 15px;
+        width: 300px;
+        padding: 0;
+        height: 40px;
+    }
+    .form-content button i{
+        font-size: 20px;
+    }
+    .form-content p{
+        font-size: 18px;
+    }
+}
